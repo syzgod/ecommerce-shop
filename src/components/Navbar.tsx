@@ -3,12 +3,13 @@ import { BsBasket } from 'react-icons/bs';
 import { AiOutlineMessage } from 'react-icons/ai';
 import { MdOutlineHomeRepairService, MdLanguage } from 'react-icons/md';
 import { VscAccount } from 'react-icons/vsc';
+import shopLogo from '../assets/All-I-Buy.png';
 
 const Navbar = () => {
   return (
     <nav>
       <div>
-        <img src='' alt='shop logo' />
+        <img src={`${shopLogo}`} alt='shop logo' />
       </div>
       <ul>
         <li>

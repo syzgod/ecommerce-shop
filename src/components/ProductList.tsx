@@ -1,26 +1,14 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-
-const BASE_URL = 'https://fakestoreapi.com/products';
+import ProductCard from './ProductCard';
 
 const ProductList = () => {
-  const [products, setProducts] = useState<any>();
-
-  useEffect(() => {
-    const getProducts = (): any => {
-      axios.get(BASE_URL).then((response) => {
-        setProducts(response.data);
-      });
-    };
-    getProducts();
-    console.log(products);
-  }, []);
-  return products.map((product: any) => (
-    <div>
-      <img src={`${product.image}`} alt='' />
-      {product.title}
+  return (
+    <div className='product-container'>
+      <h1>Products:</h1>
+      <div className='product-list'>
+        <ProductCard />
+      </div>
     </div>
-  ));
+  );
 };
 
 export default ProductList;
