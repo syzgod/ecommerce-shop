@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Register from './components/Register';
 import getProducts from './components/services/services';
 import ProductList from './components/ProductList';
+import SideNavbar from './components/SideNavbar';
 
 function App() {
   const [isGuest, setIsGuest] = useState(true);
@@ -14,6 +15,7 @@ function App() {
   }, []);
   return (
     <div>
+      <SideNavbar />
       <Navbar />
       {!isGuest && <Login />}
       {!isGuest && <Register />}
