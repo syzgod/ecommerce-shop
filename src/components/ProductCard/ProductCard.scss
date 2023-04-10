@@ -1,0 +1,41 @@
+@use '../../styles/variables';
+
+.product-card {
+  background-color: hsla(18, 90%, 95%, 0.3);
+  backdrop-filter: blur(10px);
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
+  overflow: hidden;
+  border-bottom: 6px solid transparent;
+
+  &:hover {
+    background-color: hsla(18, 90%, 35%, 0.1);
+    border-bottom: 6px solid variables.$highlight-bottom-border;
+    cursor: pointer;
+  }
+
+  h3 {
+    font-size: normal;
+    font-weight: lighter;
+    margin: 10px;
+    text-align: center;
+  }
+}
+
+.product-image {
+  width: 80%;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 30px;
+  &:hover {
+    scale: 115%;
+    transition: ease-in-out 200ms;
+  }
+}
