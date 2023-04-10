@@ -8,8 +8,9 @@ import shopLogo from '../assets/All-I-Buy.png';
 const Navbar = () => {
   return (
     <nav>
-      <div>
+      <div className='brand'>
         <img src={`${shopLogo}`} alt='shop logo' />
+        <span className='brand-text'>All-I-Buy</span>
       </div>
       <ul>
         <li>

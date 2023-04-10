@@ -3,11 +3,14 @@ import React from 'react';
 const SideNavbar = () => {
   return (
     <div className='sidenavbar'>
-      <p>Men's Wear</p>
-      <p>Women's Wear</p>
-      <p>Kids' Wear</p>
-      <p>Shoes</p>
-      <p>Electronics</p>
+      <h1>Categories</h1>
+      <ul>
+        <li>Men's Clothing</li>
+        <li>Women's Clothing</li>
+        <li>Kids' Wear</li>
+        <li>Jewelery</li>
+        <li>Electronics</li>
+      </ul>
     </div>
   );
 };
