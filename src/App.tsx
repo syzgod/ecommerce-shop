@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.scss';
 import Login from './components/Login/Login';
-import Navbar from './components/Navbar/Navbar';
+import Navbar from './components/TopNavbar/TopNavbar';
 import Register from './components/Register/Register';
 import getProducts from './components/services/services';
 import ProductList from './components/ProductList/ProductList';

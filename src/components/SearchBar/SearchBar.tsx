@@ -1,13 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { HiMagnifyingGlass } from 'react-icons/hi2';
 
 const SearchBar = () => {
+  const [searchInput, setSearchInput] = useState('');
+
+  const inputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchInput(e.target.value);
+  };
+
   return (
-    <form action=''>
-      <input type='text' placeholder='Search for product' />
-      <button>
+    <form action='' className='search-form'>
+      <input
+        type='text'
+        placeholder='Search for product'
+        className='search-input'
+        value={searchInput}
+        onChange={(e) => inputChange(e)}
+      />
+      <button className='search-button'>
         <HiMagnifyingGlass />
-        Search
+        <span>Search</span>
       </button>
     </form>
   );

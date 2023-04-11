@@ -1,7 +1,7 @@
-@use '../../styles/variables';
+@use '../../styles/variables' as *;
 
 .product-container {
-  color: variables.$primary-color;
+  color: $primary-color;
   display: flex;
   justify-content: center;
   align-items: center;

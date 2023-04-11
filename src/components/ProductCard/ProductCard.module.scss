@@ -1,4 +1,4 @@
-@use '../../styles/variables';
+@use '../../styles/variables' as *;
 
 .product-card {
   background-color: hsla(18, 90%, 95%, 0.3);
@@ -13,11 +13,11 @@
   -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
   overflow: hidden;
-  border-bottom: 6px solid transparent;
+  border-bottom: 6px solid $primary-color;
 
   &:hover {
     background-color: hsla(18, 90%, 35%, 0.1);
-    border-bottom: 6px solid variables.$highlight-bottom-border;
+    border-bottom: 6px solid $highlight-bottom-border;
     cursor: pointer;
   }
 
