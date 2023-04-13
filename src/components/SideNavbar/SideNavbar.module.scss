@@ -26,5 +26,9 @@
       border-bottom: 4px solid $highlight-bottom-border;
       border-radius: 10px 0px 0px 10px;
     }
+    a {
+      color: $primary-color;
+      text-decoration: none;
+    }
   }
 }

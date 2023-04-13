@@ -35,7 +35,7 @@ const ProductList = () => {
       <div className='product-list'>
         <ProductCard filteredProducts={filteredProducts} />
       </div>
-      <SideNavbar />
+      <SideNavbar products={products} />
     </div>
   );
 };
