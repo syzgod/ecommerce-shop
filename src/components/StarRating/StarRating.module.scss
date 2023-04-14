@@ -1,0 +1,76 @@
+@use '../../styles/variables' as *;
+
+.star-rating {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  border-radius: 10px;
+  background-color: lightgray;
+
+  .star {
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    margin-right: 4px;
+    border-radius: 50%;
+    background-color: transparent;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ff9100;
+      clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+      );
+      border: 1px solid $primary-color;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+      );
+      border: 1px solid $primary-color;
+    }
+
+    &.empty:before,
+    &.empty:after {
+      background-color: transparent;
+      border: 1px solid $primary-color;
+    }
+  }
+
+  .rating-number {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}

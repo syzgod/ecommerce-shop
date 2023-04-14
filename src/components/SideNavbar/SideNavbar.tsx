@@ -1,45 +1,38 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
-const Sidebar = () => {
+const Sidebar = ({ products, setFilteredProducts }: any) => {
   const [category, setCategory] = useState('');
 
-  const compareCategory = () => {};
-
-  // TODO: compare product category and category clicked and display the relevant products (cards)
+  useEffect(() => {
+    setFilteredProducts(
+      products?.filter((product: any) =>
+        category ? product.category === category : true
+      )
+    );
+  }, [category, products, setFilteredProducts]);
 
   const clickHandle = (categoryValue: string) => {
     setCategory(categoryValue);
-    console.log(category);
   };
 
   return (
     <div className='sidenavbar'>
       <h1>Categories</h1>
       <ul>
-        <li>
-          <a href='#' onClick={() => clickHandle("men's clothing")}>
-            Men's Clothing
-          </a>
+        <li onClick={() => clickHandle('')}>
+          <a href='#'>All</a>
         </li>
-        <li>
-          <a href='#' onClick={() => clickHandle("women's clothing")}>
-            Women's Clothing
-          </a>
+        <li onClick={() => clickHandle("men's clothing")}>
+          <a href='#'>Men's Clothing</a>
         </li>
-        <li>
-          <a href='#' onClick={() => clickHandle("kids' wear")}>
-            Kids' Wear
-          </a>
+        <li onClick={() => clickHandle("women's clothing")}>
+          <a href='#'>Women's Clothing</a>
         </li>
-        <li>
-          <a href='#' onClick={() => clickHandle('jewelry')}>
-            Jewelry
-          </a>
+        <li onClick={() => clickHandle('jewelery')}>
+          <a href='#'>Jewelry</a>
         </li>
-        <li>
-          <a href='#' onClick={() => clickHandle('electronics')}>
-            Electronics
-          </a>
+        <li onClick={() => clickHandle('electronics')}>
+          <a href='#'>Electronics</a>
         </li>
       </ul>
     </div>

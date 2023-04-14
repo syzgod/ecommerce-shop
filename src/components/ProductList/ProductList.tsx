@@ -9,7 +9,7 @@ const BASE_URL = 'https://fakestoreapi.com/products?limit=50';
 
 const ProductList = () => {
   const [products, setProducts] = useState<any>();
-  const [searchInput, setSearchInput] = useState('');
+  const [searchInput, setSearchInput] = useState<string>('');
   const [filteredProducts, setFilteredProducts] = useState([]);
 
   useEffect(() => {
@@ -35,7 +35,10 @@ const ProductList = () => {
       <div className='product-list'>
         <ProductCard filteredProducts={filteredProducts} />
       </div>
-      <SideNavbar products={products} />
+      <SideNavbar
+        products={products}
+        setFilteredProducts={setFilteredProducts}
+      />
     </div>
   );
 };
