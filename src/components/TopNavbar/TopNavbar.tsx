@@ -15,23 +15,23 @@ const Navbar = () => {
       <ul>
         <li>
           <MdLanguage size={20} />
-          <a href='#'>Language</a>
+          <a href='#'></a>
         </li>
         <li>
           <VscAccount size={20} />
-          <a href='#'>My Account</a>
+          <a href='#'></a>
         </li>
         <li>
           <MdOutlineHomeRepairService size={20} />
-          <a href='#'>Services</a>
+          <a href='#'></a>
         </li>
         <li>
           <AiOutlineMessage size={20} />
-          <a href='#'>Contact</a>
+          <a href='#'></a>
         </li>
         <li>
           <BsBasket size={20} />
-          <a href='#'>Basket</a>
+          <a href='#'></a>
         </li>
       </ul>
     </nav>

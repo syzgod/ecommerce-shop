@@ -10,12 +10,12 @@ nav {
   z-index: 100;
   backdrop-filter: blur(10px);
   justify-content: space-between;
-  -webkit-box-shadow: 0px 2px 15px 0px $primary-color;
-  -moz-box-shadow: 0px 2px 15px 0px $primary-color;
-  box-shadow: 0px 2px 15px 0px $primary-color;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
 
   ul {
-    color: $primary-color;
+    color: $primary-font-color;
     display: flex;
     list-style: none;
     justify-content: center;
@@ -32,7 +32,7 @@ nav {
   img {
     width: 50px;
     border-radius: 10px;
-    border: 2px solid $primary-color;
+    border: 2px solid $primary-font-color;
   }
   .brand {
     display: flex;
@@ -41,22 +41,21 @@ nav {
     cursor: pointer;
   }
   .brand-text {
-    color: #444;
+    color: $primary-font-color;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
   }
   a {
     text-decoration: none;
-    color: $primary-color;
-    padding: 10px;
+    color: $primary-font-color;
   }
   li {
-    padding: 0px 5px 0px 5px;
-    border-bottom: 4px solid transparent;
+    padding: 15px;
+    border-bottom: 1px solid transparent;
     &:hover {
-      border-bottom: 4px solid $highlight-bottom-border;
+      border-bottom: 1px solid $highlight-bottom-border;
       background-color: $highlight-background;
-      border-radius: 10px 10px 10px 10px;
+      border-radius: 25px;
     }
   }
 }

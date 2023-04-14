@@ -14,21 +14,5 @@
 
 body {
   font: 100% $font-stack;
-  background: linear-gradient(
-    90deg,
-    hsla(18, 76%, 85%, 1) 0%,
-    hsla(203, 69%, 84%, 1) 100%
-  );
-
-  background: -moz-linear-gradient(
-    90deg,
-    hsla(18, 76%, 85%, 1) 0%,
-    hsla(203, 69%, 84%, 1) 100%
-  );
-
-  background: -webkit-linear-gradient(
-    90deg,
-    hsla(18, 76%, 85%, 1) 0%,
-    hsla(203, 69%, 84%, 1) 100%
-  );
+  background: #121212;
 }

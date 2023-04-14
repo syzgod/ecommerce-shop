@@ -11,7 +11,7 @@ const StarRating = ({ rating }: any) => {
           index + 0.5 <= filledStars ? 'star full' : 'star empty';
         return <span key={index} className={starClass}></span>;
       })}
-      <div className='rating-number'>{rating}</div>
+      <span className='rating-number'>{rating}</span>
     </div>
   );
 };

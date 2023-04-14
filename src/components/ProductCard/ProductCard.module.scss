@@ -1,24 +1,36 @@
 @use '../../styles/variables' as *;
 
 .product-card {
-  background-color: hsla(18, 90%, 95%, 0.3);
+  background-color: #181818;
   backdrop-filter: blur(10px);
   width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 15px;
+  border-radius: 5px;
   -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
   -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
   overflow: hidden;
-  border-bottom: 6px solid $primary-color;
+  border-bottom: 2px solid $primary-font-color;
+  padding: 10px;
 
   &:hover {
-    background-color: hsla(18, 90%, 35%, 0.1);
-    border-bottom: 6px solid $highlight-bottom-border;
+    background-color: $highlight-background;
+    border-bottom: 2px solid $highlight-bottom-border;
     cursor: pointer;
+  }
+
+  h1 {
+    position: absolute;
+    top: 10px;
+    font-size: smaller;
+    text-transform: capitalize;
+    color: $background-color-light;
+    background-color: $highlight-dark;
+    padding: 10px;
+    border-radius: 30px;
   }
 
   h3 {
@@ -27,15 +39,24 @@
     margin: 10px;
     text-align: center;
   }
+
+  p {
+    color: #6070f0;
+    font-size: larger;
+    font-weight: bolder;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
 }
 
 .product-image {
   width: 80%;
   padding: 10px;
   margin: 5px;
-  border-radius: 30px;
+  border-radius: 20px;
   &:hover {
     scale: 115%;
     transition: ease-in-out 200ms;
+    z-index: -10;
   }
 }

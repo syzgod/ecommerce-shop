@@ -1,11 +1,8 @@
 @use '../../styles/variables' as *;
 
 .star-rating {
-  display: flex;
-  align-items: center;
   padding: 4px;
-  border-radius: 10px;
-  background-color: lightgray;
+  display: flex;
 
   .star {
     display: inline-block;
@@ -37,7 +34,7 @@
         2% 35%,
         39% 35%
       );
-      border: 1px solid $primary-color;
+      border: 1px solid $primary-font-color;
     }
 
     &:before {
@@ -59,17 +56,16 @@
         2% 35%,
         39% 35%
       );
-      border: 1px solid $primary-color;
     }
 
     &.empty:before,
     &.empty:after {
-      background-color: transparent;
-      border: 1px solid $primary-color;
+      background-color: #303030;
     }
   }
 
   .rating-number {
+    display: inline-block;
     font-size: 16px;
     font-weight: bold;
   }
