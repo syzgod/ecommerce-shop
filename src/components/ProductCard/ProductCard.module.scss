@@ -1,7 +1,7 @@
 @use '../../styles/variables' as *;
 
 .product-card {
-  background-color: #181818;
+  background-color: #202020;
   backdrop-filter: blur(10px);
   width: 250px;
   display: flex;
@@ -24,13 +24,15 @@
 
   h1 {
     position: absolute;
-    top: 10px;
+    top: -5px;
+    left: 5px;
     font-size: smaller;
     text-transform: capitalize;
     color: $background-color-light;
     background-color: $highlight-dark;
     padding: 10px;
     border-radius: 30px;
+    border: 1px solid $primary-font-color;
   }
 
   h3 {
@@ -41,11 +43,11 @@
   }
 
   p {
-    color: #6070f0;
-    font-size: larger;
+    color: $highlight-bottom-border;
+    font-size: 1.5em;
     font-weight: bolder;
     padding: 5px;
-    margin-bottom: 10px;
+    margin-top: 20px;
   }
 }
 

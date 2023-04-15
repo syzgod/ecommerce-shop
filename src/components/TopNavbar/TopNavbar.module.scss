@@ -51,11 +51,14 @@ nav {
   }
   li {
     padding: 15px;
-    border-bottom: 1px solid transparent;
+    border-bottom: 2px solid transparent;
     &:hover {
-      border-bottom: 1px solid $highlight-bottom-border;
+      border-bottom: 2px solid $highlight-bottom-border;
       background-color: $highlight-background;
-      border-radius: 25px;
+      border-radius: 50%;
+      -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
+      -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
+      box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
     }
   }
 }

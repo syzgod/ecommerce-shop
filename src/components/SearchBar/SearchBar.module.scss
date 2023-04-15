@@ -19,13 +19,14 @@
     font-size: large;
     padding: 15px;
     border-radius: 0px 10px 10px 0px;
-    border-bottom: 4px solid $primary-font-color;
+    border-bottom: 2px solid $primary-font-color;
     span {
       margin-left: 5px;
     }
     &:hover {
+      color: $primary-font-color;
       background-color: $highlight-background;
-      border-bottom: 4px solid $highlight-bottom-border;
+      border-bottom: 2px solid $highlight-bottom-border;
     }
   }
 }

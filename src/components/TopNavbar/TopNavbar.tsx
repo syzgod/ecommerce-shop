@@ -14,23 +14,23 @@ const Navbar = () => {
       </div>
       <ul>
         <li>
-          <MdLanguage size={20} />
+          <MdLanguage size={25} />
           <a href='#'></a>
         </li>
         <li>
-          <VscAccount size={20} />
+          <VscAccount size={25} />
           <a href='#'></a>
         </li>
         <li>
-          <MdOutlineHomeRepairService size={20} />
+          <MdOutlineHomeRepairService size={25} />
           <a href='#'></a>
         </li>
         <li>
-          <AiOutlineMessage size={20} />
+          <AiOutlineMessage size={25} />
           <a href='#'></a>
         </li>
         <li>
-          <BsBasket size={20} />
+          <BsBasket size={25} />
           <a href='#'></a>
         </li>
       </ul>

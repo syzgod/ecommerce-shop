@@ -3,18 +3,23 @@
 .product-container {
   color: $primary-font-color;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   min-width: 100%;
-  margin: 100px 0px;
+  margin: 100px 50px;
+
+  h1 {
+    margin: 20px;
+  }
 }
 
 .product-list {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
   width: 70%;
   margin-top: 15px;
 }

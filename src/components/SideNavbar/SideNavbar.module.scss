@@ -18,13 +18,16 @@
 
   li {
     font-size: larger;
-    padding: 10px;
+    padding: 20px;
     cursor: pointer;
     border-bottom: 1px solid transparent;
     &:hover {
       background-color: $highlight-background;
       border-bottom: 1px solid $highlight-bottom-border;
       border-radius: 5px 0px 0px 5px;
+      -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
+      -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
+      box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
     }
     a {
       color: $primary-font-color;
