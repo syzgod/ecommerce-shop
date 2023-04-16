@@ -1,6 +1,6 @@
 import React from 'react';
 
-const StarRating = ({ rating }: any) => {
+const StarRating = ({ rating, count }: any) => {
   const filledStars = Math.round(rating * 2) / 2; // round to nearest 0.5
   const maxStars = 5;
 
@@ -12,6 +12,7 @@ const StarRating = ({ rating }: any) => {
         return <span key={index} className={starClass}></span>;
       })}
       <span className='rating-number'>{rating}</span>
+      <span className='rating-count'>({count})</span>
     </div>
   );
 };

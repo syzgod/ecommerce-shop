@@ -1,0 +1,16 @@
+@use '../../styles/variables' as *;
+
+.product-button {
+  text-transform: uppercase;
+  width: 100%;
+  background-color: $background-light;
+  padding: 15px;
+  margin: 2px;
+  border: 3px solid $highlight-dark;
+
+  &:hover {
+    color: $background-light;
+    background-color: $background-light-highlight;
+    border: 3px solid $highlight-dark;
+  }
+}

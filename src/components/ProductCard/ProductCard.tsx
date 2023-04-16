@@ -1,14 +1,22 @@
 import StarRating from '../StarRating/StarRating';
+import ProductButton from '../ProductButton/ProductButton';
 
 const ProductCard = ({ filteredProducts }: any) => {
   return filteredProducts?.map((product: any) => (
     <div className='product-card' key={product.id}>
-      <h1>{product.category}</h1>
-      <img className='product-image' src={`${product.image}`} alt='' />
-      <h3>{product.title}</h3>
-      <StarRating rating={product.rating.rate} />
-      <span>({product.rating.count})</span>
-      <p>${product.price}</p>
+      <div className='product-info'>
+        <h1>{product.category}</h1>
+        <img className='product-image' src={`${product.image}`} alt='' />
+        <h3>{product.title}</h3>
+      </div>
+      <div className='card-bottom'>
+        <StarRating rating={product.rating.rate} count={product.rating.count} />
+        <p>${product.price}</p>
+        <div className='option-buttons'>
+          <ProductButton option={'See more'} />
+          <ProductButton option={'To the Basket'} />
+        </div>
+      </div>
     </div>
   ));
 };
