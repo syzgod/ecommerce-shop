@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import './App.scss';
-import Login from './components/Login/Login';
-import Navbar from './components/TopNavbar/TopNavbar';
-import Register from './components/Register/Register';
+import LoginPage from './components/LoginPage/LoginPage';
+import TopNavbar from './components/TopNavbar/TopNavbar';
+import RegisterPage from './components/RegisterPage/RegisterPage';
 import getProducts from './components/services/services';
 import ProductList from './components/ProductList/ProductList';
 
@@ -11,9 +11,9 @@ function App() {
 
   return (
     <div>
-      <Navbar />
-      {!isGuest && <Login />}
-      {!isGuest && <Register />}
+      <TopNavbar />
+      {!isGuest && <LoginPage />}
+      {!isGuest && <RegisterPage />}
       <ProductList />
     </div>
   );

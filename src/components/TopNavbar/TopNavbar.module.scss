@@ -1,12 +1,20 @@
 @use '../../styles/variables' as *;
 
+.navbar {
+  top: 40;
+  transition: top 0.1s ease-in-out;
+}
+
+.navbar.scrolled {
+  top: 0;
+}
+
 nav {
   display: flex;
   position: fixed;
-  top: 0;
+  top: 10;
   left: 0;
   width: 100%;
-  padding: 5px;
   z-index: 100;
   backdrop-filter: blur(10px);
   justify-content: space-between;
@@ -30,7 +38,7 @@ nav {
     align-items: center;
   }
   img {
-    width: 50px;
+    width: 40px;
     border-radius: 10px;
     border: 2px solid $primary-font-color;
   }
@@ -51,14 +59,10 @@ nav {
   }
   li {
     padding: 15px;
-    border-bottom: 2px solid transparent;
+    border-bottom: 1px solid transparent;
     &:hover {
-      border-bottom: 2px solid $highlight-bottom-border;
-      background-color: $highlight-background;
-      border-radius: 50%;
-      -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
-      -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
-      box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
+      color: $background-light;
+      border-bottom: 1px solid $highlight-bottom-border;
     }
   }
 }

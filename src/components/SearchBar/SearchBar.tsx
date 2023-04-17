@@ -20,14 +20,13 @@ const SearchBar = ({
     <form action='' className='search-form'>
       <input
         type='text'
-        placeholder='Search for product'
+        placeholder='Search'
         className='search-input'
         value={searchInput}
         onChange={(e) => handleSearch(e)}
       />
       <button className='search-button'>
         <HiMagnifyingGlass />
-        <span>Search</span>
       </button>
     </form>
   );

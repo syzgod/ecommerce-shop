@@ -6,10 +6,10 @@
   align-items: center;
   width: 100vw;
   input {
-    font-size: larger;
+    font-size: large;
     color: #d1d1d1;
     width: 300px;
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px 0px 0px 10px;
     outline-color: $highlight-bottom-border;
     background-color: #181818;
@@ -17,15 +17,15 @@
   button {
     display: flex;
     font-size: large;
-    padding: 15px;
+    padding: 10px;
     border-radius: 0px 10px 10px 0px;
     border-bottom: 2px solid $primary-font-color;
     span {
       margin-left: 5px;
     }
     &:hover {
-      color: $primary-font-color;
-      background-color: $highlight-background;
+      color: $background-light;
+      background-color: $background-light-highlight;
       border-bottom: 2px solid $highlight-bottom-border;
     }
   }
