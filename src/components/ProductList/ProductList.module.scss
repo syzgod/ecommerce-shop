@@ -7,11 +7,13 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-width: 100%;
+  min-width: 100vw;
   margin: 100px 50px;
 
   h1 {
-    margin: 20px;
+    color: $background-light;
+    margin: 15px;
+    border-bottom: 2px solid $highlight-bottom-border;
   }
 }
 

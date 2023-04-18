@@ -1,16 +1,31 @@
 @use '../../styles/variables' as *;
 
 .product-button {
+  color: $primary-font-color;
   text-transform: uppercase;
   width: 100%;
-  background-color: $background-light;
+  background-color: $background-dark;
   padding: 15px;
   margin: 2px;
-  border: 3px solid $highlight-dark;
+  border: 3px solid $primary-font-color;
+  border-radius: 30px;
 
   &:hover {
     color: $background-light;
     background-color: $background-light-highlight;
-    border: 3px solid $highlight-dark;
+    border: 3px solid $background-light;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.product-button:nth-child(2) {
+  color: $background-dark;
+  background-color: $background-light;
+  border: 3px solid $background-light-highlight;
+  &:hover {
+    color: $background-light;
+    background-color: $background-light-highlight;
+    border: 3px solid $background-light;
+    transition: all 0.3s ease-in-out;
   }
 }

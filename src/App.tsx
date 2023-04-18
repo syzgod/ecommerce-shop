@@ -5,6 +5,7 @@ import TopNavbar from './components/TopNavbar/TopNavbar';
 import RegisterPage from './components/RegisterPage/RegisterPage';
 import getProducts from './components/services/services';
 import ProductList from './components/ProductList/ProductList';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [isGuest, setIsGuest] = useState(true);
@@ -15,6 +16,7 @@ function App() {
       {!isGuest && <LoginPage />}
       {!isGuest && <RegisterPage />}
       <ProductList />
+      <Footer />
     </div>
   );
 }

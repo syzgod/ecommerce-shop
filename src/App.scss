@@ -7,6 +7,7 @@
 @use '../src/components/StarRating/StarRating.module.scss';
 @use '../src/components/ProductButton/ProductButton.module.scss';
 @use '../src/components/TopBanner/TopBanner.module.scss';
+@use '../src/components/Footer/Footer.module.scss';
 
 * {
   box-sizing: border-box;
@@ -16,5 +17,5 @@
 
 body {
   font: 100% $font-stack;
-  background: #252525;
+  background: #303030;
 }

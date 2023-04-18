@@ -1,7 +1,7 @@
 @use '../../styles/variables' as *;
 
 .product-card {
-  background-color: #202020;
+  background-color: $background-dark;
   backdrop-filter: blur(10px);
   width: 250px;
   display: flex;
@@ -19,6 +19,7 @@
   &:hover {
     background-color: $highlight-background;
     border-bottom: 2px solid $highlight-bottom-border;
+    transition: all 0.3s ease-in-out;
     cursor: pointer;
   }
 
@@ -33,6 +34,7 @@
     padding: 10px;
     border-radius: 30px;
     border: 1px solid $primary-font-color;
+    z-index: 10;
   }
 
   h3 {
@@ -40,6 +42,9 @@
     font-weight: lighter;
     margin: 10px;
     text-align: center;
+    z-index: 10;
+    text-shadow: -1px 1px 2px $background-dark, 1px 2px 6px $background-dark,
+      1px -1px 0 $background-dark, -1px -1px 0 $background-dark;
   }
 
   p {
@@ -53,12 +58,15 @@
 
 .product-image {
   width: 80%;
-  margin: 5px;
+  margin-top: 25px;
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
   &:hover {
     scale: 115%;
-    transition: ease-in-out 200ms;
-    z-index: -10;
+    transition: scale 0.4s ease-in-out;
   }
 }
 

@@ -14,7 +14,7 @@ const ProductCard = ({ filteredProducts }: any) => {
         <p>${product.price}</p>
         <div className='option-buttons'>
           <ProductButton option={'See more'} />
-          <ProductButton option={'To the Basket'} />
+          <ProductButton option={'Add to Basket'} />
         </div>
       </div>
     </div>
