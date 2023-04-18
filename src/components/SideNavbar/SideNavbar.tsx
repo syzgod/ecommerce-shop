@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import { ImMan, ImWoman } from 'react-icons/im';
+import { GiPearlNecklace } from 'react-icons/gi';
+import { BsPlugin } from 'react-icons/bs';
+import { TbCategory } from 'react-icons/Tb';
 
 const Sidebar = ({ products, setFilteredProducts }: any) => {
   const [category, setCategory] = useState('');
@@ -20,19 +24,34 @@ const Sidebar = ({ products, setFilteredProducts }: any) => {
       <h1>Categories</h1>
       <ul>
         <li onClick={() => clickHandle('')}>
-          <a href='#'>All</a>
+          <a href='#'>
+            <TbCategory size={20} />
+            <span>All</span>
+          </a>
         </li>
         <li onClick={() => clickHandle("men's clothing")}>
-          <a href='#'>Men's Clothing</a>
+          <a href='#'>
+            <ImMan size={20} />
+            <span>Men's Clothing</span>
+          </a>
         </li>
         <li onClick={() => clickHandle("women's clothing")}>
-          <a href='#'>Women's Clothing</a>
+          <a href='#'>
+            <ImWoman size={20} />
+            <span>Women's Clothing</span>
+          </a>
         </li>
         <li onClick={() => clickHandle('jewelery')}>
-          <a href='#'>Jewelry</a>
+          <a href='#'>
+            <GiPearlNecklace />
+            <span>Jewelry</span>
+          </a>
         </li>
         <li onClick={() => clickHandle('electronics')}>
-          <a href='#'>Electronics</a>
+          <a href='#'>
+            <BsPlugin size={20} />
+            <span>Electronics</span>
+          </a>
         </li>
       </ul>
     </div>

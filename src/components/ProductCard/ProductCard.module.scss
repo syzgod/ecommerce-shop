@@ -38,13 +38,12 @@
   }
 
   h3 {
-    font-size: normal;
-    font-weight: lighter;
+    font-size: larger;
+    font-weight: 300;
     margin: 10px;
     text-align: center;
     z-index: 10;
-    text-shadow: -1px 1px 2px $background-dark, 1px 2px 6px $background-dark,
-      1px -1px 0 $background-dark, -1px -1px 0 $background-dark;
+    mix-blend-mode: difference;
   }
 
   p {

@@ -33,8 +33,14 @@
       }
     }
     a {
+      display: flex;
+      justify-content: start;
+      align-items: center;
       color: $background-light-highlight;
       text-decoration: none;
+      span {
+        margin-left: 5px;
+      }
     }
   }
 }

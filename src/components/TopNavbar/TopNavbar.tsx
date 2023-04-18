@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { BsBasket } from 'react-icons/bs';
+import { BsHandbag } from 'react-icons/bs';
 import { AiOutlineMessage } from 'react-icons/ai';
-import { MdOutlineHomeRepairService, MdLanguage } from 'react-icons/md';
+import { MdLanguage, MdMiscellaneousServices } from 'react-icons/md';
 import { VscAccount } from 'react-icons/vsc';
 import shopLogo from '../../assets/All-I-Buy.png';
 import TopBanner from '../TopBanner/TopBanner';
@@ -44,7 +44,7 @@ const TopNavbar = () => {
             <a href='#'></a>
           </li>
           <li>
-            <MdOutlineHomeRepairService size={25} />
+            <MdMiscellaneousServices size={25} />
             <a href='#'></a>
           </li>
           <li>
@@ -52,7 +52,7 @@ const TopNavbar = () => {
             <a href='#'></a>
           </li>
           <li>
-            <BsBasket size={25} />
+            <BsHandbag size={25} />
             <a href='#'></a>
           </li>
         </ul>
