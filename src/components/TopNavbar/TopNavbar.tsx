@@ -38,22 +38,27 @@ const TopNavbar = () => {
           <li>
             <MdLanguage size={25} />
             <a href='#'></a>
+            <span>Language</span>
           </li>
           <li>
             <VscAccount size={25} />
             <a href='#'></a>
+            <span>Account</span>
           </li>
           <li>
             <MdMiscellaneousServices size={25} />
             <a href='#'></a>
+            <span>Services</span>
           </li>
           <li>
             <AiOutlineMessage size={25} />
             <a href='#'></a>
+            <span>Support</span>
           </li>
           <li>
             <BsHandbag size={25} />
             <a href='#'></a>
+            <span>Basket</span>
           </li>
         </ul>
       </nav>

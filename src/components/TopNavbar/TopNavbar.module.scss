@@ -29,6 +29,13 @@ nav {
     justify-content: center;
     align-items: center;
     font-size: larger;
+    span {
+      margin-left: 5px;
+
+      @media (max-width: $layout-breakpoint-small) {
+        display: none;
+      }
+    }
   }
   li,
   img {
@@ -38,7 +45,7 @@ nav {
     align-items: center;
   }
   img {
-    width: 40px;
+    width: 60px;
     border-radius: 10px;
     border: 2px solid $primary-font-color;
   }
@@ -52,6 +59,9 @@ nav {
     color: $primary-font-color;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
+    @media (max-width: $layout-breakpoint-small) {
+      display: none;
+    }
   }
   a {
     text-decoration: none;

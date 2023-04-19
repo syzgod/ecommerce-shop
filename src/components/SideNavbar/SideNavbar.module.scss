@@ -4,14 +4,26 @@
   color: $primary-font-color;
   height: 100%;
   position: fixed;
-  top: 64px;
+  top: 115px;
   left: 0px;
-  margin: 10px;
+  padding: 10px;
   padding-top: 100px;
-  backdrop-filter: blur(10px);
-  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
-  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.55);
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.55);
+  border-radius: 0 0 10px 0px;
+  z-index: 100;
+
+  @media (max-width: $layout-breakpoint-small) {
+    height: 250px;
+    padding-top: 40px;
+  }
+
+  h1 {
+    @media (max-width: $layout-breakpoint-small) {
+      display: none;
+    }
+  }
 
   ul {
     list-style: none;
@@ -40,6 +52,9 @@
       text-decoration: none;
       span {
         margin-left: 5px;
+        @media (max-width: $layout-breakpoint-small) {
+          display: none;
+        }
       }
     }
   }
