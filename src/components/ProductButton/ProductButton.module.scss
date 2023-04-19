@@ -13,7 +13,7 @@
   &:hover {
     color: $background-light;
     background-color: $background-light-highlight;
-    border: 3px solid $background-light;
+    border: 3px solid $highlight-bottom-border;
     transition: all 0.3s ease-in-out;
   }
 }
@@ -25,7 +25,7 @@
   &:hover {
     color: $background-light;
     background-color: $background-light-highlight;
-    border: 3px solid $background-light;
+    border: 3px solid $highlight-bottom-border;
     transition: all 0.3s ease-in-out;
   }
 }

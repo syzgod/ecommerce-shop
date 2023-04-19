@@ -1,12 +1,11 @@
 @use '../../styles/variables' as *;
 
 .footer-container {
-  color: $background-light;
+  color: $primary-font-color;
   background-color: $highlight-background;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 100;
   gap: 50px;
 
   li {
@@ -17,5 +16,20 @@
   a {
     color: $primary-font-color;
     text-decoration: none;
+  }
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  li {
+    display: flex;
+    align-items: center;
+
+    a {
+      margin-left: 5px;
+    }
   }
 }

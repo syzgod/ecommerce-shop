@@ -1,12 +1,16 @@
 import React from 'react';
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+  FaXing,
+} from 'react-icons/fa';
 
 const Footer = () => {
   return (
     <div className='footer-container'>
       <div className='footer-information'>
-        <li>
-          <a href='#'>Contact us</a>
-        </li>
         <li>
           <a href='#'>Track my order</a>
         </li>
@@ -20,34 +24,36 @@ const Footer = () => {
           <a href='#'>Returns & cancellations</a>
         </li>
         <li>
-          <a href='#'>Price promise</a>
-        </li>
-        <li>
           <a href='#'>Stores</a>
         </li>
         <li>
           <a href='#'>Ways to pay</a>
         </li>
-        <li>
-          <a href='#'>Care and repair</a>
-        </li>
       </div>
       <div className='footer-social'>
-        <li>
-          <a href='#'>facebook</a>
-        </li>
-        <li>
-          <a href='#'>instagram</a>
-        </li>
-        <li>
-          <a href='#'></a>twitter
-        </li>
-        <li>
-          <a href='#'></a>linkedin
-        </li>
-        <li>
-          <a href='#'></a>youtube
-        </li>
+        <h3>Social Links</h3>
+        <section className='social-links'>
+          <li>
+            <FaFacebook />
+            <a href='#'>Facebook</a>
+          </li>
+          <li>
+            <FaInstagram />
+            <a href='#'>Instagram</a>
+          </li>
+          <li>
+            <FaTwitter />
+            <a href='#'></a>Twitter
+          </li>
+          <li>
+            <FaLinkedin />
+            <a href='#'></a>Linkedin
+          </li>
+          <li>
+            <FaXing />
+            <a href='#'></a>Xing
+          </li>
+        </section>
       </div>
       <div className='footer-legal'>
         <li>
@@ -60,7 +66,10 @@ const Footer = () => {
           <a href='#'>Sitemap</a>
         </li>
       </div>
-      <div className='footer-opportunities'>
+      <div className='footer-communication'>
+        <li>
+          <a href='#'>Contact us</a>
+        </li>
         <li>
           <a href='#'>About us</a>
         </li>
