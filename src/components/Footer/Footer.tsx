@@ -43,15 +43,15 @@ const Footer = () => {
           </li>
           <li>
             <FaTwitter />
-            <a href='#'></a>Twitter
+            <a href='#'>Twitter</a>
           </li>
           <li>
             <FaLinkedin />
-            <a href='#'></a>Linkedin
+            <a href='#'>Linkedin</a>
           </li>
           <li>
             <FaXing />
-            <a href='#'></a>Xing
+            <a href='#'>Xing</a>
           </li>
         </section>
       </div>

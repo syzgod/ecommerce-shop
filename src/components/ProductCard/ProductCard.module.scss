@@ -21,6 +21,10 @@
     border-bottom: 2px solid $highlight-bottom-border;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+
+    h3 {
+      color: white;
+    }
   }
 
   h1 {
@@ -42,8 +46,6 @@
     font-weight: 300;
     margin: 10px;
     text-align: center;
-    z-index: 10;
-    mix-blend-mode: difference;
   }
 
   p {
@@ -55,14 +57,20 @@
   }
 }
 
-.product-image {
-  width: 80%;
-  margin-top: 25px;
-  border-radius: 20px;
+.product-image__container {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+}
+
+.product-image {
+  width: 80%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &:hover {
     scale: 115%;
     transition: scale 0.4s ease-in-out;

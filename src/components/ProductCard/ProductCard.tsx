@@ -6,7 +6,9 @@ const ProductCard = ({ filteredProducts }: any) => {
     <div className='product-card' key={product.id}>
       <div className='product-info'>
         <h1>{product.category}</h1>
-        <img className='product-image' src={`${product.image}`} alt='' />
+        <div className='product-image__container'>
+          <img className='product-image' src={`${product.image}`} alt='' />
+        </div>
         <h3>{product.title}</h3>
       </div>
       <div className='card-bottom'>

@@ -1,0 +1,32 @@
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40rem;
+  margin-top: 10rem;
+  width: fit-content;
+  overflow: hidden;
+}
+
+.image-container {
+  width: 300px;
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.image {
+  max-width: 300px;
+  height: auto;
+  margin-right: 8px;
+}
+
+.carousel-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 10px;
+  margin: 0 8px;
+}
