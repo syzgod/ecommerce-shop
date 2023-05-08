@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const ImageCarousel = ({ images }: any) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -13,6 +13,10 @@ const ImageCarousel = ({ images }: any) => {
     setCurrentIndex(index);
   };
 
+  useEffect(() => {
+    setInterval(() => nextImage(), 5000);
+  });
+
   const translateX = `translateX(-${currentIndex * 100}%)`;
 
   return (
@@ -26,10 +30,6 @@ const ImageCarousel = ({ images }: any) => {
             className='image'
           ></img>
         ))}
-      </div>
-      <div className='carousel-buttons'>
-        <button onClick={previousImage}>Previous</button>
-        <button onClick={nextImage}>Next</button>
       </div>
     </div>
   );

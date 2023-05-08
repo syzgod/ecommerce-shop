@@ -1,0 +1,7 @@
+@use '../../styles/variables' as *;
+
+.adPage {
+  max-width: 700px;
+  background-color: $background-light-highlight;
+  margin-top: 10rem;
+}

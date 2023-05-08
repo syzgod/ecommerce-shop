@@ -9,6 +9,7 @@
 @use '../src/components/TopBanner/TopBanner.module.scss';
 @use '../src/components/Footer/Footer.module.scss';
 @use '../src/components/ImageCarousel/ImageCarousel.module.scss';
+@use '../src/components/Advertisements/Advertisement.module.scss';
 
 * {
   box-sizing: border-box;
@@ -19,4 +20,10 @@
 body {
   font: 100% $font-stack;
   background: #303030;
+}
+
+.ads {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

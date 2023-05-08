@@ -11,6 +11,7 @@ import electronics from './assets/carousel/electronics.jpg';
 import jewelry from './assets/carousel/jewelery.jpg';
 import fashion_women from './assets/carousel/fashion-women.jpg';
 import accessories from './assets/carousel/accessories.jpg';
+import Advertisements from './components/Advertisements/Advertisements';
 
 function App() {
   const [isGuest, setIsGuest] = useState(true);
@@ -22,7 +23,9 @@ function App() {
       <TopNavbar />
       {!isGuest && <LoginPage />}
       {!isGuest && <RegisterPage />}
-      <ImageCarousel images={images} />
+      <div className='ads'>
+        <Advertisements images={images} />
+      </div>
       <ProductList />
       <Footer />
     </div>
