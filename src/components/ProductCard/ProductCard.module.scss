@@ -9,9 +9,6 @@
   justify-content: space-between;
   align-items: center;
   border-radius: 5px;
-  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
-  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
   overflow: hidden;
   border-bottom: 2px solid $primary-font-color;
   padding: 10px;
@@ -21,6 +18,9 @@
     border-bottom: 2px solid $highlight-bottom-border;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
 
     h3 {
       color: white;

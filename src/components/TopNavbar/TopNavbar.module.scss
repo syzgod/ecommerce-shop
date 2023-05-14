@@ -59,6 +59,7 @@ nav {
     color: $primary-font-color;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
+    text-transform: uppercase;
     @media (max-width: $layout-breakpoint-small) {
       display: none;
     }

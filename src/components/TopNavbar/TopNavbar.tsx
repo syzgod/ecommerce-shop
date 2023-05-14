@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { BsHandbag } from 'react-icons/bs';
 import { AiOutlineMessage } from 'react-icons/ai';
 import { MdLanguage, MdMiscellaneousServices } from 'react-icons/md';
-import { VscAccount } from 'react-icons/vsc';
+import { RiAccountCircleLine } from 'react-icons/ri';
 import shopLogo from '../../assets/All-I-Buy.png';
 import TopBanner from '../TopBanner/TopBanner';
 
@@ -41,7 +41,7 @@ const TopNavbar = () => {
             <span>Language</span>
           </li>
           <li>
-            <VscAccount size={25} />
+            <RiAccountCircleLine size={25} />
             <a href='#'></a>
             <span>Account</span>
           </li>

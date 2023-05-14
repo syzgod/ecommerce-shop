@@ -4,9 +4,11 @@ import { GiPearlNecklace } from 'react-icons/gi';
 import { BsPlugin, BsGooglePlay } from 'react-icons/bs';
 import { TbCategory } from 'react-icons/Tb';
 import { AiFillApple } from 'react-icons/ai';
+import { RiFileList2Line } from 'react-icons/ri';
 
 const Sidebar = ({ products, setFilteredProducts }: any) => {
   const [category, setCategory] = useState('');
+  const [navbarOpen, setNavbarOpen] = useState(false);
 
   useEffect(() => {
     setFilteredProducts(
@@ -16,39 +18,50 @@ const Sidebar = ({ products, setFilteredProducts }: any) => {
     );
   }, [category, products, setFilteredProducts]);
 
-  const clickHandle = (categoryValue: string) => {
+  const clickHandleCategories = (categoryValue: string) => {
     setCategory(categoryValue);
   };
 
+  const handleToggleNavbar = () => {
+    setNavbarOpen(!navbarOpen);
+    console.log(navbarOpen);
+  };
+
   return (
-    <div className='sidenavbar'>
+    <div
+      className='sidenavbar'
+      style={{ transform: navbarOpen ? '' : 'translate(-15.5rem)' }}
+    >
+      <span className='sidenavbar-toggle' onClick={handleToggleNavbar}>
+        <RiFileList2Line size={25} />
+      </span>
       <h1>Categories</h1>
       <ul>
-        <li onClick={() => clickHandle('')}>
+        <li onClick={() => clickHandleCategories('')}>
           <a href='#'>
             <TbCategory size={20} />
             <span>All</span>
           </a>
         </li>
-        <li onClick={() => clickHandle("men's clothing")}>
+        <li onClick={() => clickHandleCategories("men's clothing")}>
           <a href='#'>
             <ImMan size={20} />
             <span>Men's Clothing</span>
           </a>
         </li>
-        <li onClick={() => clickHandle("women's clothing")}>
+        <li onClick={() => clickHandleCategories("women's clothing")}>
           <a href='#'>
             <ImWoman size={20} />
             <span>Women's Clothing</span>
           </a>
         </li>
-        <li onClick={() => clickHandle('jewelery')}>
+        <li onClick={() => clickHandleCategories('jewelery')}>
           <a href='#'>
             <GiPearlNecklace />
             <span>Jewelry</span>
           </a>
         </li>
-        <li onClick={() => clickHandle('electronics')}>
+        <li onClick={() => clickHandleCategories('electronics')}>
           <a href='#'>
             <BsPlugin size={20} />
             <span>Electronics</span>
