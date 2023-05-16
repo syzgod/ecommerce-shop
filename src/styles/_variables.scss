@@ -8,3 +8,10 @@ $highlight-bottom-border: #00d0ff;
 $highlight-dark: #101010;
 
 $layout-breakpoint-small: 970px;
+
+@mixin box-shadow($x, $y, $blur, $spread, $c) {
+  -webkit-box-shadow: $x $y $blur $spread $c;
+  -moz-box-shadow: $x $y $blur $spread $c;
+  -ms-box-shadow: $x $y $blur $spread $c;
+  box-shadow: $x $y $blur $spread $c;
+}

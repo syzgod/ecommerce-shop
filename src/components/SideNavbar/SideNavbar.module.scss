@@ -8,10 +8,9 @@
   top: 10rem;
   left: 0px;
   padding: 10px;
-  -webkit-box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.55);
-  -moz-box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.55);
-  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.55);
   border-radius: 0 0 10px 0px;
+  transition: all 0.5s;
+  @include box-shadow(5px, 5px, 5px, 2px, rgba(0, 0, 0, 0.55));
 
   @media (max-width: $layout-breakpoint-small) {
     height: fit-content;

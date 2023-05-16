@@ -18,9 +18,7 @@ nav {
   z-index: 100;
   justify-content: space-between;
   backdrop-filter: blur(10px);
-  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
-  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.55);
+  @include box-shadow(5px, 5px, 5px, 0px, rgba(0, 0, 0, 0.55));
 
   ul {
     color: $primary-font-color;

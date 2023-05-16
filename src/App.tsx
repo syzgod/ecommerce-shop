@@ -12,23 +12,30 @@ import jewelry from './assets/carousel/jewelery.jpg';
 import fashion_women from './assets/carousel/fashion-women.jpg';
 import accessories from './assets/carousel/accessories.jpg';
 import Advertisements from './components/Advertisements/Advertisements';
+import Login from './pages/login/Login';
 
 function App() {
-  const [isGuest, setIsGuest] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
 
   const images = [electronics, jewelry, fashion_women, accessories];
 
   return (
-    <div>
-      <TopNavbar />
-      {!isGuest && <LoginPage />}
-      {!isGuest && <RegisterPage />}
-      <div className='ads'>
-        <Advertisements images={images} />
-      </div>
-      <ProductList />
-      <Footer />
-    </div>
+    <>
+      {isLoggedIn ? (
+        <>
+          <TopNavbar />
+          <div className='ads'>
+            <Advertisements images={images} />
+          </div>
+          <ProductList />
+        </>
+      ) : (
+        <>
+          <Login />
+          <Footer />
+        </>
+      )}
+    </>
   );
 }
 
