@@ -15,3 +15,27 @@ $layout-breakpoint-small: 970px;
   -ms-box-shadow: $x $y $blur $spread $c;
   box-shadow: $x $y $blur $spread $c;
 }
+
+@mixin buttons(
+  $primary-color,
+  $background-color,
+  $border-color,
+  $hover-primary-color,
+  $hover-background-color,
+  $hover-border-color
+) {
+  color: $primary-color;
+  text-transform: uppercase;
+  background-color: $background-color;
+  padding: 15px;
+  margin: 2px;
+  border: 1px solid $border-color;
+  border-radius: 30px;
+
+  &:hover {
+    color: $hover-primary-color;
+    background-color: $hover-background-color;
+    border: 1px solid $hover-border-color;
+    transition: all 0.3s ease-in-out;
+  }
+}

@@ -1,0 +1,24 @@
+@use '../../styles/variables' as *;
+
+.form-container {
+  min-width: 100vw;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  label {
+    display: block;
+  }
+
+  button:first-child {
+    @include buttons(
+      $background-dark,
+      $background-light,
+      $background-light,
+      $background-light,
+      $background-light-highlight,
+      $background-light
+    );
+  }
+}

@@ -1,0 +1,19 @@
+@use '../../styles/variables' as *;
+
+.chat-container {
+  display: flex;
+  position: fixed;
+  right: 2rem;
+  bottom: 1rem;
+  border: 2px solid $background-dark;
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: $background-light-highlight;
+  transition: all 0.3s linear;
+
+  &:hover {
+    background-color: $background-light;
+    transform: translateY(-0.5rem);
+    transition: all 0.3s linear;
+  }
+}
