@@ -6,14 +6,12 @@
   align-items: center;
   min-width: 100%;
   input {
-    font-size: large;
-    color: #d1d1d1;
-    width: 300px;
-    padding: 10px;
-    border: 1px solid $background-light-highlight;
-    border-radius: 20px 0px 0px 20px;
-    outline-color: $highlight-bottom-border;
-    background-color: #181818;
+    @include input-field(
+      #d1d1d1,
+      $background-light-highlight,
+      $highlight-bottom-border,
+      #181818
+    );
   }
   button {
     display: flex;
@@ -25,8 +23,8 @@
       margin-left: 5px;
     }
     &:hover {
-      color: $background-light;
-      background-color: $background-light-highlight;
+      color: $background-dark;
+      background-color: $highlight-bottom-border;
       border: 2px solid $highlight-bottom-border;
     }
   }

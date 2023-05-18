@@ -20,8 +20,8 @@ const Login = ({ setIsLoggedIn }: LoginProps) => {
           <button onClick={handleLogin}>Login</button>
           <button>Register</button>
         </div>
-        <p>Forgot password?</p>
-        <p>Need help?</p>
+        <a href='#'>Forgot password?</a>
+        <a href='#'>Need help?</a>
       </form>
     </div>
   );

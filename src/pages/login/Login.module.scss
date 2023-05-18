@@ -6,9 +6,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: $background-light;
 
   label {
+    width: fit-content;
+    color: $background-light;
     display: block;
+    margin: 0.5rem 0 0.5rem 0;
+    border-bottom: 2px solid $highlight-bottom-border;
+  }
+
+  input {
+    @include input-field(
+      #d1d1d1,
+      $background-light-highlight,
+      $highlight-bottom-border,
+      #181818
+    );
+    border-radius: 1rem;
   }
 
   button:first-child {
@@ -16,9 +31,37 @@
       $background-dark,
       $background-light,
       $background-light,
-      $background-light,
-      $background-light-highlight,
-      $background-light
+      $background-dark,
+      $highlight-bottom-border,
+      $highlight-bottom-border
     );
   }
+
+  button:last-child {
+    @include buttons(
+      $background-light,
+      $background-light-highlight,
+      $background-light,
+      $background-dark,
+      $highlight-bottom-border,
+      $background-dark
+    );
+  }
+
+  a {
+    display: block;
+    color: $background-light;
+    text-decoration: none;
+    margin-top: 1rem;
+
+    &:hover {
+      color: $highlight-bottom-border;
+    }
+  }
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
