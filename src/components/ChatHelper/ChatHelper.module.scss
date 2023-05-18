@@ -8,11 +8,11 @@
   border: 2px solid $background-dark;
   padding: 1rem;
   border-radius: 50%;
-  background-color: $background-light-highlight;
+  background-color: $background-light;
   transition: all 0.3s linear;
 
   &:hover {
-    background-color: $background-light;
+    background-color: $highlight-bottom-border;
     transform: translateY(-0.5rem);
     transition: all 0.3s linear;
   }

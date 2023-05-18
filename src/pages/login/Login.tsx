@@ -12,9 +12,9 @@ const Login = ({ setIsLoggedIn }: LoginProps) => {
   return (
     <div className='form-container'>
       <form action='submit'>
-        <label htmlFor='email'>User e-mail</label>
+        <label htmlFor='email'>E-mail</label>
         <input type='text' name='' id='email' value='test@test.com' />
-        <label htmlFor='password'>User password</label>
+        <label htmlFor='password'>Password</label>
         <input type='text' name='' id='password' value='test' />
         <div className='form-buttons'>
           <button onClick={handleLogin}>Login</button>

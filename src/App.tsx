@@ -20,9 +20,9 @@ function App() {
 
   return (
     <>
+      <ChatHelper />
       {isLoggedIn ? (
         <>
-          <ChatHelper />
           <TopNavbar />
           <div className='ads'>
             <Advertisements images={images} />
@@ -32,9 +32,9 @@ function App() {
       ) : (
         <>
           <Login setIsLoggedIn={setIsLoggedIn} />
-          <Footer />
         </>
       )}
+      <Footer />
     </>
   );
 }
