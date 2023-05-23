@@ -1,9 +1,7 @@
 @use '../../styles/variables' as *;
 
 .search-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexContainer(row, center, center);
   min-width: 100%;
   input {
     @include input-field(

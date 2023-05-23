@@ -45,9 +45,7 @@
       }
     }
     a {
-      display: flex;
-      justify-content: start;
-      align-items: center;
+      @include flexContainer(row, start, center);
       color: $background-light-highlight;
       text-decoration: none;
       span {

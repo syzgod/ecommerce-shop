@@ -1,10 +1,8 @@
 @use '../../styles/variables' as *;
 
 .star-rating {
+  @include flexContainer(row, center, center);
   padding: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   .star {
     display: inline-block;

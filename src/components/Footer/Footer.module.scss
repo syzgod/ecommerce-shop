@@ -1,11 +1,9 @@
 @use '../../styles/variables' as *;
 
 .footer-container {
+  @include flexContainer(row, center, center);
   color: $primary-font-color;
   background-color: $highlight-background;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 50px;
 
   li {

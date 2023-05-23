@@ -21,11 +21,9 @@ nav {
   @include box-shadow(5px, 5px, 5px, 0px, rgba(0, 0, 0, 0.55));
 
   ul {
+    @include flexContainer(row, center, center);
     color: $primary-font-color;
-    display: flex;
     list-style: none;
-    justify-content: center;
-    align-items: center;
     font-size: larger;
     span {
       margin-left: 5px;
@@ -37,10 +35,8 @@ nav {
   }
   li,
   img {
+    @include flexContainer(row, center, center);
     margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   img {
     width: 60px;
@@ -48,9 +44,7 @@ nav {
     border: 2px solid $primary-font-color;
   }
   .brand {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexContainer(row, center, center);
     cursor: pointer;
   }
   .brand-text {

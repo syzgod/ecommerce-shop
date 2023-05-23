@@ -1,8 +1,7 @@
+@use '../../styles/variables' as *;
+
 .carousel {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include flexContainer(column, center, center);
   width: fit-content;
   overflow: hidden;
   clip-path: polygon(41% 0, 100% 0, 100% 100%, 0% 100%);

@@ -1,12 +1,9 @@
 @use '../../styles/variables' as *;
 
 .product-container {
+  @include flexContainer(column, center, center);
   color: $primary-font-color;
-  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   width: 100%;
   margin-top: 100px;
   margin-bottom: 40px;

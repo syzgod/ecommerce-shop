@@ -1,13 +1,10 @@
 @use '../../styles/variables' as *;
 
 .product-card {
+  @include flexContainer(column, space-between, center);
   background-color: $background-dark;
   backdrop-filter: blur(10px);
   width: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   border-radius: 5px;
   overflow: hidden;
   border-bottom: 2px solid $primary-font-color;

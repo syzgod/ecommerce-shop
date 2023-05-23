@@ -50,3 +50,10 @@ $layout-breakpoint-small: 970px;
   outline-color: $outline-color;
   background-color: $background-color;
 }
+
+@mixin flexContainer($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
