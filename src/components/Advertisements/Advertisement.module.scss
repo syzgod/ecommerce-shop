@@ -2,6 +2,26 @@
 
 .adPage {
   max-width: 700px;
-  background-color: $background-light-highlight;
+  color: $background-light;
+  background-color: $background-dark;
   margin-top: 10rem;
+}
+
+.adContent {
+  @include flexContainer(row, center, center);
+}
+
+.adCarousel {
+  @include flexContainer(row, center, center);
+}
+
+.adText {
+  margin: 0 15px 0 15px;
+
+  h1 {
+    margin-bottom: 15px;
+  }
+  p {
+    margin-bottom: 15px;
+  }
 }

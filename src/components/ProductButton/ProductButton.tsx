@@ -1,7 +1,5 @@
-import React from 'react';
-
 const ProductButton = ({ option }: any) => {
-  return <button className='product-button'>{option}</button>;
+  return <button className='button-variant'>{option}</button>;
 };
 
 export default ProductButton;

@@ -23,7 +23,7 @@ function App() {
       <ChatHelper />
       {isLoggedIn ? (
         <>
-          <TopNavbar />
+          <TopNavbar isLoggedIn={isLoggedIn} />
           <div className='ads'>
             <Advertisements images={images} />
           </div>

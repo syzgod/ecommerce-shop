@@ -15,7 +15,7 @@
     border-bottom: 2px solid $highlight-bottom-border;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
-    @include box-shadow(5px, 5px, 5px, 0px, rgba(0, 0, 0, 0.55));
+    @include box-shadow(5px, 5px, 5px, 0px, hsla(0, 0%, 0%, 0.55));
 
     h3 {
       color: white;

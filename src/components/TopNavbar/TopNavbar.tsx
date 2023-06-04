@@ -6,7 +6,7 @@ import { RiAccountCircleLine } from 'react-icons/ri';
 import shopLogo from '../../assets/All-I-Buy.png';
 import TopBanner from '../TopBanner/TopBanner';
 
-const TopNavbar = () => {
+const TopNavbar = ({ isLoggedIn }: any) => {
   const [navbarTop, setNavbarTop] = useState(50);
 
   // on scroll event listener
@@ -19,7 +19,7 @@ const TopNavbar = () => {
 
   // handle scroll event
   const handleScroll = () => {
-    if (window.pageYOffset > 0) {
+    if (window.scrollY > 0) {
       setNavbarTop(0);
     } else {
       setNavbarTop(40);

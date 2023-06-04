@@ -57,3 +57,28 @@ $layout-breakpoint-small: 970px;
   justify-content: $justify;
   align-items: $align;
 }
+
+@mixin button-variant(
+  $color,
+  $background,
+  $border,
+  $hover-color,
+  $hover-background,
+  $hover-border
+) {
+  color: $color;
+  text-transform: uppercase;
+  width: 100%;
+  background-color: $background;
+  padding: 15px;
+  margin: 2px;
+  border: 1px solid $border;
+  border-radius: 30px;
+
+  &:hover {
+    color: $hover-color;
+    background-color: $hover-background;
+    border: 1px solid $hover-border;
+    transition: all 0.3s ease-in-out;
+  }
+}

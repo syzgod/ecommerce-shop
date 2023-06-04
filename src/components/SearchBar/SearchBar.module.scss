@@ -11,9 +11,10 @@
       #181818
     );
   }
-  button {
+  .search-button {
     display: flex;
     font-size: large;
+    width: fit-content;
     padding: 10px;
     border-radius: 0px 20px 20px 0px;
     border: 2px solid $primary-font-color;
