@@ -9,6 +9,8 @@ const Login = ({ setIsLoggedIn }: LoginProps) => {
     setIsLoggedIn(true);
   };
 
+  const handleRegister = () => {};
+
   return (
     <div className='form-container'>
       <form action='submit'>
@@ -18,7 +20,7 @@ const Login = ({ setIsLoggedIn }: LoginProps) => {
         <input type='text' name='' id='password' value='test' />
         <div className='form-buttons'>
           <button onClick={handleLogin}>Login</button>
-          <button>Register</button>
+          <button onClick={handleRegister}>Register</button>
         </div>
         <a href='#'>Forgot password?</a>
         <a href='#'>Need help?</a>
