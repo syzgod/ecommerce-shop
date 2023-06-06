@@ -4,12 +4,10 @@ interface LoginProps {
   setIsLoggedIn: (value: boolean) => void;
 }
 
-const Login = ({ setIsLoggedIn }: LoginProps) => {
+const Login = ({ setIsLoggedIn, handleRegister }: LoginProps) => {
   const handleLogin = () => {
     setIsLoggedIn(true);
   };
-
-  const handleRegister = () => {};
 
   return (
     <div className='form-container'>
