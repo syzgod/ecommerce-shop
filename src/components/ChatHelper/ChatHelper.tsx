@@ -1,11 +1,12 @@
 import React from 'react';
 import { BsFillChatSquareTextFill } from 'react-icons/bs';
+import { motion } from 'framer-motion';
 
 const ChatHelper = () => {
   return (
-    <div className='chat-container'>
+    <motion.div className='chat-container'>
       <BsFillChatSquareTextFill size={50} />
-    </div>
+    </motion.div>
   );
 };
 
