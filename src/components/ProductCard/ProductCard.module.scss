@@ -49,6 +49,9 @@
     font-weight: bolder;
     padding: 5px;
     margin-top: 20px;
+    + div {
+      color: hsl(0, 96%, 63%);
+    }
   }
 }
 
@@ -88,4 +91,19 @@
 }
 .card-bottom {
   width: 100%;
+}
+
+.ribbon-sale {
+  @include flexContainer(row, center, center);
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  width: 120px;
+  height: 30px;
+  background-color: hsl(0, 96%, 63%);
+  transform: rotate(45deg);
+  position: absolute;
+  right: -30px;
+  top: 16px;
+  z-index: 100;
 }
