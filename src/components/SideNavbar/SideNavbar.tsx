@@ -67,6 +67,12 @@ const Sidebar = ({ products, setFilteredProducts }: any) => {
             <span>Electronics</span>
           </a>
         </li>
+        <li onClick={() => clickHandleCategories('deals')}>
+          <a href='#'>
+            <BsPlugin size={20} />
+            <span>Best deals</span>
+          </a>
+        </li>
         <div className='small-icons'>
           <a href='https://dev-vik.tech/'>
             <AiFillApple size={30} />

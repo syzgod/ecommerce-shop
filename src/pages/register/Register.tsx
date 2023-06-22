@@ -33,7 +33,7 @@ const Register = () => {
       <section>
         <div>
           <div>
-            <h1> FocusApp </h1>
+            <h1>All-I-Buy</h1>
             <form>
               <div>
                 <label htmlFor='email-address'>Email address</label>
