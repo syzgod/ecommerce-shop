@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.scss';
+
 import TopNavbar from './components/TopNavbar/TopNavbar';
 import getProducts from './components/services/services';
 import ProductList from './components/ProductList/ProductList';
@@ -13,7 +14,7 @@ import Advertisements from './components/Advertisements/Advertisements';
 import Login from './pages/login/Login';
 import ChatHelper from './components/ChatHelper/ChatHelper';
 
-function App() {
+function App(props: any) {
   const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
 
   const images = [electronics, jewelry, fashion_women, accessories];

@@ -17,9 +17,10 @@ const SearchBar = ({
   };
 
   return (
-    <form action='' className='search-form'>
+    <form role='search' className='search-form'>
       <input
-        type='text'
+        aria-label='Search products'
+        type='search'
         placeholder='Search'
         className='search-input'
         value={searchInput}
