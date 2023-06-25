@@ -4,6 +4,7 @@ import App from './App';
 import Register from './pages/register/Register';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { ThemeProvider } from './context/ThemeContext';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ThemeProvider>
+      <RouterProvider router={router} />
+    </ThemeProvider>
   </React.StrictMode>
 );

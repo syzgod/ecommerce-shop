@@ -6,7 +6,7 @@ import { RiAccountCircleLine } from 'react-icons/ri';
 import shopLogo from '../../assets/All-I-Buy.png';
 import TopBanner from '../TopBanner/TopBanner';
 
-const TopNavbar = ({ isLoggedIn }: any) => {
+const TopNavbar = ({ isLoggedIn, theme, setTheme }: any) => {
   const [navbarTop, setNavbarTop] = useState(50);
 
   // on scroll event listener
@@ -60,6 +60,11 @@ const TopNavbar = ({ isLoggedIn }: any) => {
             <a href='#'></a>
             <span>Basket</span>
           </li>
+          <button
+            onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+          >
+            Switch Theme
+          </button>
         </ul>
       </nav>
     </>
