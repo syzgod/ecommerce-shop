@@ -5,6 +5,9 @@ import Register from './pages/register/Register';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
+import Account from './pages/account/Account';
+import Services from './pages/services/Services';
+import Basket from './pages/basket/Basket';
 
 const router = createBrowserRouter([
   {
@@ -14,6 +17,18 @@ const router = createBrowserRouter([
   {
     path: '/register',
     element: <Register />,
+  },
+  {
+    path: '/account',
+    element: <Account />,
+  },
+  {
+    path: '/services',
+    element: <Services />,
+  },
+  {
+    path: '/basket',
+    element: <Basket />,
   },
 ]);
 

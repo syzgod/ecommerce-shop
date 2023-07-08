@@ -5,9 +5,15 @@ import { MdLanguage, MdMiscellaneousServices } from 'react-icons/md';
 import { RiAccountCircleLine } from 'react-icons/ri';
 import shopLogo from '../../assets/All-I-Buy.png';
 import TopBanner from '../TopBanner/TopBanner';
+import { Link } from 'react-router-dom';
 
 const TopNavbar = ({ isLoggedIn, theme, setTheme }: any) => {
   const [navbarTop, setNavbarTop] = useState(50);
+
+  const style =
+    theme === 'light' ? { backgroundColor: 'white', color: 'black' } : {};
+
+  console.log(theme);
 
   // on scroll event listener
   useEffect(() => {
@@ -38,17 +44,21 @@ const TopNavbar = ({ isLoggedIn, theme, setTheme }: any) => {
           <li>
             <MdLanguage size={25} />
             <a href='#'></a>
-            <span>Language</span>
+            <span style={style}>Language</span>
           </li>
           <li>
             <RiAccountCircleLine size={25} />
-            <a href='#'></a>
-            <span>Account</span>
+
+            <Link to='/account'>
+              <span>Account</span>
+            </Link>
           </li>
           <li>
             <MdMiscellaneousServices size={25} />
-            <a href='#'></a>
-            <span>Services</span>
+
+            <Link to='/services'>
+              <span>Services</span>
+            </Link>
           </li>
           <li>
             <AiOutlineMessage size={25} />
@@ -57,8 +67,10 @@ const TopNavbar = ({ isLoggedIn, theme, setTheme }: any) => {
           </li>
           <li>
             <BsHandbag size={25} />
-            <a href='#'></a>
-            <span>Basket</span>
+
+            <Link to='/basket'>
+              <span>Basket</span>
+            </Link>
           </li>
           <button
             onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}

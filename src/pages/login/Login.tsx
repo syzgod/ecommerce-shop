@@ -1,4 +1,3 @@
-import React, { ComponentProps } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
@@ -29,8 +28,10 @@ const Login = ({ setIsLoggedIn }: LoginProps) => {
             <button>Register</button>
           </Link>
         </div>
-        <a href='#'>Forgot password?</a>
-        <a href='#'>Need help?</a>
+        <div className='helper-links'>
+          <a href='#'>Forgot password?</a>
+          <a href='#'>Need help?</a>
+        </div>
       </form>
     </motion.div>
   );

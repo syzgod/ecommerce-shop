@@ -8,6 +8,10 @@
   align-items: center;
   color: $background-light;
 
+  form {
+    border: 1px solid $background-light;
+  }
+
   label {
     width: fit-content;
     color: $background-light;
@@ -52,11 +56,13 @@
     display: block;
     color: $background-light;
     text-decoration: none;
-    margin-top: 1rem;
 
     &:hover {
       color: $highlight-bottom-border;
     }
+  }
+  .helper-links > a {
+    margin-top: 1rem;
   }
 }
 
