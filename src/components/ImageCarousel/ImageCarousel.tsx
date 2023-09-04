@@ -1,38 +1,54 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
-const ImageCarousel = ({ images }: any) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+const delay = 5000;
 
-  const previousImage = () => {
-    const index = (currentIndex - 1 + images.length) % images.length;
-    setCurrentIndex(index);
-  };
+export default function ImageCarousel({ images }: any) {
+  const [index, setIndex] = useState(0);
+  const timeoutRef = useRef(null as any);
 
-  const nextImage = () => {
-    const index = (currentIndex + 1) % images.length;
-    setCurrentIndex(index);
-  };
+  function resetTimeout() {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+  }
 
   useEffect(() => {
-    setInterval(() => nextImage(), 5000);
-  });
+    resetTimeout();
+    timeoutRef.current = setTimeout(
+      () =>
+        setIndex((prevIndex) =>
+          prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        ),
+      delay
+    );
 
-  const translateX = `translateX(-${currentIndex * 100}%)`;
+    return () => {
+      resetTimeout();
+    };
+  }, [index]);
 
   return (
-    <div className='carousel'>
-      <div className='image-container' style={{ transform: translateX }}>
-        {images.map((image: string, index: number) => (
-          <img
-            key={index}
-            src={image}
-            alt={`image-${index}`}
-            className='image'
-          ></img>
+    <div className='slideshow'>
+      <div
+        className='slideshowSlider'
+        style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+      >
+        {images.map((_: any, index: any) => (
+          <img src={images[index]} className='slide' key={index}></img>
+        ))}
+      </div>
+
+      <div className='slideshowDots'>
+        {images.map((_: any, idx: any) => (
+          <div
+            key={idx}
+            className={`slideshowDot${index === idx ? ' active' : ''}`}
+            onClick={() => {
+              setIndex(idx);
+            }}
+          ></div>
         ))}
       </div>
     </div>
   );
-};
-
-export default ImageCarousel;
+}

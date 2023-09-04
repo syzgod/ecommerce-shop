@@ -1,29 +1,46 @@
 @use '../../styles/variables' as *;
 
-.carousel {
-  @include flexContainer(column, center, center);
+/* Slideshow */
+
+.slideshow {
+  margin: 15px;
   overflow: hidden;
-  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+  max-width: 500px;
 }
 
-.image-container {
-  width: 300px;
-  height: 300px;
-  display: flex;
-  transition: transform 0.3s ease-in-out;
+.slideshowSlider {
+  white-space: nowrap;
+  transition: ease 1000ms;
 }
 
-.image {
-  max-width: 100%;
-  height: 100%;
+.slide {
+  display: inline-block;
+
+  height: 200px;
+  width: 100%;
+  border-radius: 20px;
 }
 
-.carousel-buttons {
-  display: flex;
-  justify-content: center;
+/* Buttons */
+
+.slideshowDots {
+  text-align: center;
 }
 
-button {
-  padding: 10px;
-  margin: 0 8px;
+.slideshowDot {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+
+  cursor: pointer;
+  margin: 15px 7px 0px;
+
+  background-color: $background-light-highlight;
+}
+
+.slideshowDot.active {
+  background-color: $background-light;
+  width: 15px;
+  border-radius: 40%;
 }
