@@ -5,6 +5,7 @@ import { BsPlugin, BsGooglePlay } from 'react-icons/bs';
 import { TbCategory } from 'react-icons/Tb';
 import { AiFillApple } from 'react-icons/ai';
 import { RiFileList2Line } from 'react-icons/ri';
+import { MdSell } from 'react-icons/md';
 
 const Sidebar = ({ products, setFilteredProducts }: any) => {
   const [category, setCategory] = useState('');
@@ -69,7 +70,7 @@ const Sidebar = ({ products, setFilteredProducts }: any) => {
         </li>
         <li onClick={() => clickHandleCategories('deals')}>
           <a href='#'>
-            <BsPlugin size={20} />
+            <MdSell size={20} />
             <span>Best deals</span>
           </a>
         </li>

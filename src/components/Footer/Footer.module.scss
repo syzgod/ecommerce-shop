@@ -1,14 +1,14 @@
 @use '../../styles/variables' as *;
 
 .footer-container {
-  @include flexContainer(row, center, center);
+  @include flexContainer(row, center, start);
   color: $primary-font-color;
   background-color: $highlight-background;
   gap: 50px;
 
   li {
     list-style: none;
-    margin: 5px;
+    margin: 5px 0 5px 0;
   }
 
   a {
@@ -17,7 +17,7 @@
   }
 }
 
-.social-links {
+section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,4 +30,9 @@
       margin-left: 5px;
     }
   }
+}
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

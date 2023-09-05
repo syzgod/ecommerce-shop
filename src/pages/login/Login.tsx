@@ -23,10 +23,10 @@ const Login = ({ setIsLoggedIn }: LoginProps) => {
         <label htmlFor='password'>Password</label>
         <input type='text' name='' id='password' value='test' />
         <div className='form-buttons'>
-          <button onClick={handleLogin}>Login</button>
-          <Link to='/register'>
-            <button>Register</button>
+          <Link to='/' onClick={handleLogin}>
+            Login
           </Link>
+          <Link to='/register'>Register</Link>
         </div>
         <div className='helper-links'>
           <a href='#'>Forgot password?</a>

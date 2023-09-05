@@ -24,6 +24,7 @@ $layout-breakpoint-small: 970px;
   $hover-background-color,
   $hover-border-color
 ) {
+  @include flexContainer(row, center, center);
   color: $primary-color;
   text-transform: uppercase;
   background-color: $background-color;

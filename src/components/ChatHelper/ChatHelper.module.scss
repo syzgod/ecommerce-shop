@@ -5,10 +5,10 @@
   position: fixed;
   right: 2rem;
   bottom: 1rem;
-  border: 2px solid $background-dark;
+  border: 2px solid $background-light;
   padding: 1rem;
   border-radius: 50%;
-  background-color: $background-light;
+  background-color: $background-dark;
   transition: all 0.3s linear;
 
   &:hover {
