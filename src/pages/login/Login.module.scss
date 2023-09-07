@@ -48,7 +48,7 @@
 }
 
 .form-buttons {
-  @include flexContainer(row, center, center);
+  @include flexContainer(column, center, center);
   margin-top: 1rem;
   a {
     @include buttons(
@@ -61,5 +61,22 @@
     );
     width: 100%;
     text-decoration: none;
+  }
+  .action-buttons {
+    @include flexContainer(row, center, center);
+    width: 100%;
+  }
+}
+.login-type {
+  @include flexContainer(row, center, center);
+  width: 100%;
+}
+
+.login-form {
+  @include flexContainer(column, center, center);
+
+  & img {
+    height: 10rem;
+    border-radius: 2rem 2rem 0 0;
   }
 }
