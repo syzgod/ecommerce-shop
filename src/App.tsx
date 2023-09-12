@@ -12,8 +12,9 @@ import fashion_women from './assets/carousel/fashion-women.jpg';
 import accessories from './assets/carousel/accessories.jpg';
 import Advertisements from './components/Advertisements/Advertisements';
 import Login from './pages/login/Login';
-import ChatHelper from './components/ChatHelper/ChatHelper';
 import { ThemeContext } from './context/ThemeContext';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Layout from './components/Layout';
 
 function App(props: any) {
   const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
@@ -22,27 +23,22 @@ function App(props: any) {
   const images = [electronics, jewelry, fashion_women, accessories];
 
   return (
-    <>
-      <ChatHelper />
-      {isLoggedIn ? (
-        <>
-          <TopNavbar
-            isLoggedIn={isLoggedIn}
-            theme={theme}
-            setTheme={setTheme}
-          />
-          <div className='ads'>
-            <Advertisements images={images} />
-          </div>
-          <ProductList />
-        </>
-      ) : (
-        <>
-          <Login setIsLoggedIn={setIsLoggedIn} />
-        </>
-      )}
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        {isLoggedIn ? (
+          <Route path='/' element={<Layout />}>
+            <Route path='/' element={<ImageCarousel images={images} />} />
+          </Route>
+        ) : (
+          <>
+            <Route
+              path='/login'
+              element={<Login setIsLoggedIn={setIsLoggedIn} />}
+            />
+          </>
+        )}
+      </Routes>
+    </BrowserRouter>
   );
 }
 

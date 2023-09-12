@@ -7,7 +7,7 @@ import { AiFillApple } from 'react-icons/ai';
 import { RiFileList2Line } from 'react-icons/ri';
 import { MdSell } from 'react-icons/md';
 
-const Sidebar = ({ products, setFilteredProducts }: any) => {
+const SideNavbar = ({ products, setFilteredProducts }: any) => {
   const [category, setCategory] = useState('');
   const [navbarOpen, setNavbarOpen] = useState(false);
 
@@ -181,4 +181,4 @@ const Sidebar = ({ products, setFilteredProducts }: any) => {
   );
 };
 
-export default Sidebar;
+export default SideNavbar;
