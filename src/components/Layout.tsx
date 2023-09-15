@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import TopNavbar from './TopNavbar/TopNavbar';
+import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import ChatHelper from './ChatHelper/ChatHelper';
 import SideNavbar from './SideNavbar/SideNavbar';
@@ -7,8 +7,8 @@ import SideNavbar from './SideNavbar/SideNavbar';
 const Layout = () => {
   return (
     <div>
-      <TopNavbar />
-      <SideNavbar />
+      <Header />
+      {/* <SideNavbar /> */}
       <main>
         <Outlet />
       </main>

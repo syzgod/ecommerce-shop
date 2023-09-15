@@ -1,7 +1,7 @@
 import { useEffect, useState, useContext } from 'react';
 import './main.scss';
 
-import TopNavbar from './components/TopNavbar/TopNavbar';
+import Header from './components/Header/Header';
 import getProducts from './components/services/services';
 import ProductList from './components/ProductList/ProductList';
 import Footer from './components/Footer/Footer';
@@ -17,7 +17,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Layout from './components/Layout';
 
 function App(props: any) {
-  const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
+  const [isLoggedIn, setIsLoggedIn] = useState<boolean>(true);
   const { theme, setTheme } = useContext(ThemeContext);
 
   const images = [electronics, jewelry, fashion_women, accessories];
@@ -27,7 +27,12 @@ function App(props: any) {
       <Routes>
         {isLoggedIn ? (
           <Route path='/' element={<Layout />}>
-            <Route path='/' element={<ImageCarousel images={images} />} />
+            <Route
+              path='/carousel'
+              element={<ImageCarousel images={images} />}
+            />
+            <Route path='/' element={<ProductList />} />
+            <Route path='/advertisements' element={<Advertisements />} />
           </Route>
         ) : (
           <>

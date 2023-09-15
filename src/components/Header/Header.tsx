@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { BsHandbag } from 'react-icons/bs';
 import { AiOutlineMessage } from 'react-icons/ai';
 import { MdLanguage, MdMiscellaneousServices } from 'react-icons/md';
 import { RiAccountCircleLine } from 'react-icons/ri';
 import shopLogo from '../../assets/All-I-Buy.png';
 import TopBanner from '../TopBanner/TopBanner';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-const TopNavbar = ({ isLoggedIn, theme, setTheme }: any) => {
+const Header = ({ isLoggedIn, theme, setTheme }: any) => {
   const [navbarTop, setNavbarTop] = useState(50);
 
   const style =
@@ -41,37 +41,31 @@ const TopNavbar = ({ isLoggedIn, theme, setTheme }: any) => {
           <span className='brand-text'>All-I-Buy</span>
         </div>
         <ul>
-          <li>
+          <NavLink to={'/language'}>
             <MdLanguage size={25} />
-            <a href='#'></a>
-            <span style={style}>Language</span>
-          </li>
-          <li>
+            Language
+          </NavLink>
+
+          <NavLink to='/account'>
             <RiAccountCircleLine size={25} />
+            <span>Account</span>
+          </NavLink>
 
-            <Link to='/account'>
-              <span>Account</span>
-            </Link>
-          </li>
-          <li>
+          <NavLink to='/services'>
             <MdMiscellaneousServices size={25} />
+            <span>Services</span>
+          </NavLink>
 
-            <Link to='/services'>
-              <span>Services</span>
-            </Link>
-          </li>
-          <li>
+          <NavLink to='/support'>
             <AiOutlineMessage size={25} />
-            <a href='#'></a>
             <span>Support</span>
-          </li>
-          <li>
-            <BsHandbag size={25} />
+          </NavLink>
 
-            <Link to='/basket'>
-              <span>Basket</span>
-            </Link>
-          </li>
+          <NavLink to='/basket'>
+            <BsHandbag size={25} />
+            <span>Basket</span>
+          </NavLink>
+
           <button
             onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
           >
@@ -83,4 +77,4 @@ const TopNavbar = ({ isLoggedIn, theme, setTheme }: any) => {
   );
 };
 
-export default TopNavbar;
+export default Header;
