@@ -35,43 +35,56 @@ const Header = ({ isLoggedIn, theme, setTheme }: any) => {
   return (
     <>
       <TopBanner />
+
       <nav className='navbar' style={{ top: navbarTop }}>
-        <div className='brand'>
-          <img src={`${shopLogo}`} alt='shop logo' />
-          <span className='brand-text'>All-I-Buy</span>
-        </div>
-        <ul>
-          <NavLink to={'/language'}>
-            <MdLanguage size={25} />
-            Language
-          </NavLink>
-
-          <NavLink to='/account'>
-            <RiAccountCircleLine size={25} />
-            <span>Account</span>
-          </NavLink>
-
-          <NavLink to='/services'>
-            <MdMiscellaneousServices size={25} />
-            <span>Services</span>
-          </NavLink>
-
-          <NavLink to='/support'>
-            <AiOutlineMessage size={25} />
-            <span>Support</span>
-          </NavLink>
-
-          <NavLink to='/basket'>
-            <BsHandbag size={25} />
-            <span>Basket</span>
-          </NavLink>
-
-          <button
-            onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+        <div>
+          <div
+            className='info-modal'
+            style={{
+              display: 'fixed',
+              justifyContent: 'center',
+              alignItems: 'center',
+              color: 'black',
+              backgroundColor: 'yellow',
+            }}
           >
-            Switch Theme
-          </button>
-        </ul>
+            The website is WIP(work in progress). Many features are missing or
+            existing features will be changed along with the UI.
+          </div>
+          <div style={{ display: 'flex' }}>
+            <div className='brand'>
+              <img src={`${shopLogo}`} alt='shop logo' />
+              <span className='brand-text'>All-I-Buy</span>
+            </div>
+            <ul>
+              <NavLink to={'#'}>
+                <MdLanguage size={25} />
+                Language
+              </NavLink>
+              <NavLink to='#'>
+                <RiAccountCircleLine size={25} />
+                <span>Account</span>
+              </NavLink>
+              <NavLink to='#'>
+                <MdMiscellaneousServices size={25} />
+                <span>Services</span>
+              </NavLink>
+              <NavLink to='#'>
+                <AiOutlineMessage size={25} />
+                <span>Support</span>
+              </NavLink>
+              <NavLink to='#'>
+                <BsHandbag size={25} />
+                <span>Basket</span>
+              </NavLink>
+              {/* <button
+                onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+              >
+                Switch Theme
+              </button> */}
+            </ul>
+          </div>
+        </div>
       </nav>
     </>
   );

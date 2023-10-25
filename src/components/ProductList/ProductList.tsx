@@ -31,7 +31,7 @@ const ProductList = () => {
         products={products}
         setFilteredProducts={setFilteredProducts}
       />
-      <h1>Products:</h1>
+      <h1>Products</h1>
       <div className='product-list'>
         <ProductCard filteredProducts={filteredProducts} />
       </div>

@@ -19,6 +19,11 @@ import Layout from './components/Layout';
 function App(props: any) {
   const [isLoggedIn, setIsLoggedIn] = useState<boolean>(true);
   const { theme, setTheme } = useContext(ThemeContext);
+  const [open, setOpen] = useState<boolean>(false);
+
+  const handleShow = () => {
+    setOpen(!open);
+  };
 
   const images = [electronics, jewelry, fashion_women, accessories];
 

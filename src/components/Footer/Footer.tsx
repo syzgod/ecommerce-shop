@@ -68,11 +68,11 @@ const Footer = () => {
           </li>
           <li>
             <FaLinkedin />
-            <a href='#'>Linkedin</a>
+            <a href='https://www.linkedin.com/in/bevik/'>Linkedin</a>
           </li>
           <li>
             <FaXing />
-            <a href='#'>Xing</a>
+            <a href='https://www.xing.com/profile/Viktor_Berczeli/cv'>Xing</a>
           </li>
         </section>
       </div>
@@ -98,11 +98,11 @@ const Footer = () => {
         <section>
           <li>
             <FaPhone />
-            <a href='#'>Contact us</a>
+            <a href='https://www.dev-vik.tech/home'>Contact us</a>
           </li>
           <li>
             <FaInfoCircle />
-            <a href='#'>About us</a>
+            <a href='https://www.dev-vik.tech/home'>About us</a>
           </li>
           <li>
             <FaBriefcase />

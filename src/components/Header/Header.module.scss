@@ -28,7 +28,8 @@ nav {
 
     a {
       @include flexContainer(row, center, center);
-      margin-left: 15px;
+      margin-left: 20px;
+      margin-right: 20px;
       @media (max-width: $layout-breakpoint-small) {
         display: none;
         a: svg {
@@ -74,4 +75,8 @@ nav {
       transition: border-bottom 0.4s ease-in-out;
     }
   }
+}
+
+svg {
+  margin: 5px;
 }
