@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ImMan, ImWoman } from 'react-icons/im';
 import { GiPearlNecklace } from 'react-icons/gi';
 import { BsPlugin, BsGooglePlay } from 'react-icons/bs';
-import { TbCategory } from 'react-icons/Tb';
+import { BiCategory } from 'react-icons/Bi';
 import { AiFillApple } from 'react-icons/ai';
 import { RiFileList2Line } from 'react-icons/ri';
 import { MdSell } from 'react-icons/md';
@@ -40,7 +40,7 @@ const SideNavbar = ({ products, setFilteredProducts }: any) => {
       <ul>
         <li onClick={() => clickHandleCategories('')}>
           <a href='#'>
-            <TbCategory size={20} />
+            <BiCategory size={20} />
             <span>All</span>
           </a>
         </li>
