@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const ChatHelper = () => {
   return (
     <motion.div className='chat-container'>
-      <BsFillChatSquareTextFill size={50} />
+      <BsFillChatSquareTextFill size={40} />
     </motion.div>
   );
 };

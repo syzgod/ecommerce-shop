@@ -14,7 +14,7 @@ const ProductCard = ({ filteredProducts }: any) => {
       </div>
       <div className='card-bottom'>
         <StarRating rating={product.rating.rate} count={product.rating.count} />
-        <p>${product.price}</p>
+        <p className='product-price'>${product.price}</p>
         <div>${(product.price * 0.8).toFixed(2)}</div>
         <div className='option-buttons'>
           <ProductButton option={'See more'} />

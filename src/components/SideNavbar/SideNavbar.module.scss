@@ -5,7 +5,7 @@
   background-color: $background-dark;
   height: fit-content;
   position: fixed;
-  top: 8rem;
+  top: 9rem;
   left: 0px;
   padding: 10px;
   border-radius: 0 0 10px 0px;
@@ -30,9 +30,9 @@
   }
 
   li {
+    padding: 5px;
     color: $background-light;
     font-size: larger;
-    padding: 10px;
     cursor: pointer;
     border-bottom: 2px solid transparent;
     &:hover {
@@ -92,7 +92,7 @@
 
 .sidenavbar-toggle {
   position: absolute;
-  left: 242px;
+  left: 207px;
   top: -2px;
   background-color: $background-dark;
   padding: 1rem 1rem 1rem 0.7rem;

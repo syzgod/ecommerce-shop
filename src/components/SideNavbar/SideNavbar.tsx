@@ -29,9 +29,9 @@ const SideNavbar = ({ products, setFilteredProducts }: any) => {
   };
 
   return (
-    <div
+    <aside
       className='sidenavbar'
-      style={{ transform: navbarOpen ? '' : 'translate(-15.5rem)' }}
+      style={{ transform: navbarOpen ? '' : 'translate(-13.5rem)' }}
     >
       <span className='sidenavbar-toggle' onClick={handleToggleNavbar}>
         <RiFileList2Line size={25} />
@@ -177,7 +177,7 @@ const SideNavbar = ({ products, setFilteredProducts }: any) => {
           </svg>
         </a>
       </div>
-    </div>
+    </aside>
   );
 };
 

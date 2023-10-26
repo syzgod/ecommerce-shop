@@ -1,6 +1,7 @@
 @use '../../styles/variables' as *;
 
 .search-form {
+  margin-top: 15px;
   @include flexContainer(row, center, center);
   min-width: 100%;
   input {
@@ -15,7 +16,7 @@
     display: flex;
     font-size: large;
     width: fit-content;
-    padding: 10px;
+    padding: 5px;
     border-radius: 0px 20px 20px 0px;
     border: 2px solid $primary-font-color;
     span {

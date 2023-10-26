@@ -41,9 +41,10 @@ const Header = ({ isLoggedIn, theme, setTheme }: any) => {
           <div
             className='info-modal'
             style={{
-              display: 'fixed',
+              display: 'block',
               justifyContent: 'center',
               alignItems: 'center',
+              textAlign: 'center',
               color: 'black',
               backgroundColor: 'yellow',
             }}
@@ -51,7 +52,7 @@ const Header = ({ isLoggedIn, theme, setTheme }: any) => {
             The website is WIP(work in progress). Many features are missing or
             existing features will be changed along with the UI.
           </div>
-          <div style={{ display: 'flex' }}>
+          <div className='nav-content'>
             <div className='brand'>
               <img src={`${shopLogo}`} alt='shop logo' />
               <span className='brand-text'>All-I-Buy</span>
