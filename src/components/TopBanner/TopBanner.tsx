@@ -1,4 +1,4 @@
-import { TbTruckDelivery, TbCashOff, TbBuildingStore } from 'react-icons/Tb';
+import { TbTruckDelivery, TbCashOff, TbBuildingStore } from 'react-icons/tb';
 
 const TopBanner = () => {
   return (
