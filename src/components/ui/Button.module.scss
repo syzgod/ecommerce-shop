@@ -1,0 +1,23 @@
+@use '../../styles/abstracts/variables' as *;
+
+.primary {
+  @include button-variant(
+    $background-dark,
+    $background-light,
+    $background-light,
+    $background-light,
+    $highlight-bottom-border,
+    $highlight-bottom-border
+  );
+}
+
+.secondary {
+  @include button-variant(
+    $background-dark,
+    $background-light-highlight,
+    $background-light-highlight,
+    $background-light,
+    $highlight-bottom-border,
+    $highlight-bottom-border
+  );
+}

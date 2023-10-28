@@ -1,14 +1,3 @@
-$font-stack: 'Roboto', Helvetica, sans-serif;
-$background-light: #fff;
-$background-light-highlight: #a4a4a4;
-$background-dark: #202020;
-$primary-font-color: #d0d0d0;
-$highlight-background: #404040;
-$highlight-bottom-border: #00d0ff;
-$highlight-dark: #101010;
-
-$layout-breakpoint-small: 970px;
-
 @mixin box-shadow($x, $y, $blur, $spread, $c) {
   -webkit-box-shadow: $x $y $blur $spread $c;
   -moz-box-shadow: $x $y $blur $spread $c;
@@ -69,6 +58,7 @@ $layout-breakpoint-small: 970px;
 ) {
   color: $color;
   text-transform: uppercase;
+  font-weight: bold;
   width: 100%;
   background-color: $background;
   padding: 15px;

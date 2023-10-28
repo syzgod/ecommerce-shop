@@ -1,7 +1,11 @@
 import StarRating from '../StarRating/StarRating';
-import ProductButton from '../ProductButton/ProductButton';
+import Button from '../ui/Button';
 
 const ProductCard = ({ filteredProducts }: any) => {
+  const discountedPride = (price: number) => {
+    return (Math.ceil(price * 0.8) - 0.01).toFixed(2);
+  };
+
   return filteredProducts?.map((product: any) => (
     <div className='product-card' key={product.id}>
       <div className='product-info'>
@@ -14,11 +18,13 @@ const ProductCard = ({ filteredProducts }: any) => {
       </div>
       <div className='card-bottom'>
         <StarRating rating={product.rating.rate} count={product.rating.count} />
-        <p className='product-price'>${product.price}</p>
-        <div>${(product.price * 0.8).toFixed(2)}</div>
+        <p>${discountedPride(product.price)}</p>
+        <div className='product-price'>
+          ${(Math.ceil(product.price) - 0.01).toFixed(2)}
+        </div>
         <div className='option-buttons'>
-          <ProductButton option={'See more'} />
-          <ProductButton option={'Add to Basket'} />
+          <Button className='secondary'>Details</Button>
+          <Button className='primary'>Add to basket</Button>
         </div>
       </div>
     </div>

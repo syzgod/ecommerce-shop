@@ -1,0 +1,13 @@
+@use './colors' as *;
+@import './mixins';
+
+$font-stack: 'Roboto', Helvetica, sans-serif;
+$background-light: $white;
+$background-light-highlight: $dark-200;
+$background-dark: $dark-700;
+$primary-font-color: $dark-000;
+$highlight-background: $dark-300;
+$highlight-bottom-border: $blue-400;
+$highlight-dark: $dark-900;
+
+$layout-breakpoint-small: 970px;

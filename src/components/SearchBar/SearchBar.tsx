@@ -8,6 +8,7 @@ const SearchBar = ({
   setFilteredProducts,
 }: any) => {
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+    e.preventDefault();
     setSearchInput(e.target.value);
     const query = e.target.value.toLowerCase();
     const filtered = products.filter((item: any) =>

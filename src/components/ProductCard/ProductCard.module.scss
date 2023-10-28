@@ -1,11 +1,11 @@
-@use '../../styles/variables' as *;
+@use '../../styles/abstracts/variables' as *;
 
 .product-card {
   @include flexContainer(column, space-between, center);
   background-color: $background-dark;
   backdrop-filter: blur(10px);
   width: 250px;
-  border-radius: 5px;
+  border-radius: 15px;
   overflow: hidden;
   border-bottom: 2px solid $primary-font-color;
   padding: 10px;
