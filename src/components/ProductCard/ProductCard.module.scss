@@ -1,4 +1,5 @@
 @use '../../styles/abstracts/variables' as *;
+@use '../../styles/abstracts/colors' as *;
 
 .product-card {
   @include flexContainer(column, space-between, center);
@@ -11,7 +12,7 @@
   padding: 10px;
 
   &:hover {
-    background-color: $highlight-background;
+    background-color: $dark-600;
     border-bottom: 2px solid $highlight-bottom-border;
     transition: all 0.3s ease-in-out;
     cursor: pointer;

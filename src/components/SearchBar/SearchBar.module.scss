@@ -2,7 +2,7 @@
 @use '../../styles/abstracts/variables' as *;
 
 .search-form {
-  margin-top: 15px;
+  margin-top: 30px;
   @include flexContainer(row, center, center);
   min-width: 100%;
   input {

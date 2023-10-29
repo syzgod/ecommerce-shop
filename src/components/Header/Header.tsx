@@ -45,6 +45,7 @@ const Header = ({ isLoggedIn, theme, setTheme }: any) => {
               justifyContent: 'center',
               alignItems: 'center',
               textAlign: 'center',
+              fontSize: '1.5rem',
               color: 'black',
               backgroundColor: 'yellow',
             }}
@@ -60,7 +61,7 @@ const Header = ({ isLoggedIn, theme, setTheme }: any) => {
             <ul>
               <NavLink to={'#'}>
                 <MdLanguage size={25} />
-                Language
+                <span>Language</span>
               </NavLink>
               <NavLink to='#'>
                 <RiAccountCircleLine size={25} />
