@@ -6,6 +6,7 @@ import { RiAccountCircleLine } from 'react-icons/ri';
 import shopLogo from '../../assets/All-I-Buy.png';
 import TopBanner from '../TopBanner/TopBanner';
 import { NavLink } from 'react-router-dom';
+import Dropdown from './../Dropdown/Dropdown';
 
 const Header = ({ isLoggedIn, theme, setTheme }: any) => {
   const [navbarTop, setNavbarTop] = useState(50);
@@ -30,6 +31,10 @@ const Header = ({ isLoggedIn, theme, setTheme }: any) => {
     } else {
       setNavbarTop(40);
     }
+  };
+
+  const handleDropdownSelected = (selectedOption: string) => {
+    console.log(selectedOption);
   };
 
   return (
@@ -62,6 +67,12 @@ const Header = ({ isLoggedIn, theme, setTheme }: any) => {
               <NavLink to={'#'}>
                 <MdLanguage size={25} />
                 <span>Language</span>
+                <div className='lang-drop'>
+                  <Dropdown
+                    options={['EN', 'DE', 'HU']}
+                    onSelect={handleDropdownSelected}
+                  />
+                </div>
               </NavLink>
               <NavLink to='#'>
                 <RiAccountCircleLine size={25} />
